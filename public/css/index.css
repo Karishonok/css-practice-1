@@ -1,7 +1,91 @@
-html {
-  max-width: 720px;
+.card {
+  color: red;
+  /* border: none; */
 }
 
-body {
-  background: #fff;
+.card > p {
+  color: green;
+  -webkit-text-fill-color: rgb(233, 69, 69);
+  -webkit-text-stroke: 1px blue;
+}
+
+p:focus,
+p:active,
+p:hover {
+  -webkit-text-fill-color: rgb(10, 8, 8);
+  -webkit-text-stroke: 1px rgb(200, 255, 0);
+
+  direction: rtl;
+}
+
+/* #test {
+  color: initial;
+  -webkit-text-fill-color: initial;
+  -webkit-text-stroke: initial;
+} */
+
+#test {
+  /* color: inherit;
+  -webkit-text-fill-color: inherit;
+  -webkit-text-stroke: inherit; */
+
+  /* writing-mode: vertical-lr; */
+  /* text-align: center; */
+  text-align: justify;
+  text-transform: lowercase;
+  /* letter-spacing: 5px; */
+  letter-spacing: 0.4em;
+  /* tab-size: 10px; */
+}
+span {
+  text-decoration: line-through dotted rgb(0, 68, 255);
+}
+span:hover {
+  text-decoration-color: #3f4644;
+  text-decoration-style: wavy;
+  text-decoration-line: underline;
+}
+
+pre {
+  tab-size: 8;
+}
+
+* {
+  font-family: 'Roboto', Arial, Arial, Helvetica,
+    sans-serif sans-serif;
+  /* font-family: fantasy; */
+  font-size: 18px;
+  font-weight: 900;
+  font-display: swap;
+}
+
+span {
+  font-size: xx-small;
+
+  /* font-weight: 900; */
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.test {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.inlineblock {
+  display: inline-block;
+  background: gray;
+  margin: 10px;
+}
+
+.blockk {
+  display: block;
+  background: rgb(245, 233, 233);
+  margin: auto;
+  width: 100 px;
+  height: auto;
+  min-height: 100px;
 }

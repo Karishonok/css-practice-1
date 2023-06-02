@@ -40,12 +40,14 @@
 	<div class="updates_list">
 		<h3 class="updates_title">{{title}}</h3>
 		{{#each list}}
-		<div class="list_box">
-			<span></span>
-		</div>
-		<div class="list_info">
-			<h4 class="list_nickname">@{{nickname}}</h4>
-			<p class="list_description">{{description}}</p>
+		<div class="list">
+			<div class="list_box">
+				<span></span>
+			</div>
+			<div class="list_info">
+				<h4 class="list_nickname">@{{nickname}}</h4>
+				<p class="list_description">{{description}}</p>
+			</div>
 		</div>
 		{{/each}}
 		{{#with show_all}}
@@ -62,9 +64,11 @@
 		<button class="expirience_badge">{{badge}}</button>
 	</div>
 	{{#each list}}
-	<div class="expirience_list">
-		<strong>{{name}}</strong>
-		<p>{{details}}</p>
+	<div class="expirience_total">
+		<div class="expirience_list">
+			<strong>{{name}}</strong>
+			<p>{{details}}</p>
+		</div>
 	</div>
 	{{/each}}
 	{{/with}}

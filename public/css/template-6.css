@@ -291,6 +291,11 @@
   background-color: var(--color-primary);
 }
 
+.list {
+  display: flex;
+  border-bottom: 1px solid #dee2e6;
+}
+
 .list_box {
   display: flex;
   flex-direction: column;
@@ -303,7 +308,6 @@
   flex-direction: column;
   padding: 0px 0px 12px;
   gap: 12px;
-  border-bottom: 1px solid #dee2e6;
 }
 
 .list_nickname {
@@ -331,8 +335,6 @@
 
 .expirience_header {
   display: flex;
-  flex-direction: row;
-  align-self: stretch;
 }
 
 .expirience_title {
@@ -354,6 +356,15 @@
   position: absolute;
   width: 90px;
   border-radius: 70px;
+  left: 1120px;
+  top: 1120px;
+}
+
+.expirience_total {
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .expirience_list {

@@ -1,0 +1,13 @@
+{{#with data}}
+{{#each articles}}
+<div class="articles_card">
+	<div class="card_block">
+		<img src="{{photo}}" alt="Card photo" class="card_photo" id="{{id}}">
+		<span class="badge">New</span>
+	</div>
+	<h4 class="card_name">{{name}}</h4>
+	<p class="card_description">{{description}}</p>
+	<a class="card_button" href="#">Read All</a>
+</div>
+{{/each}}
+{{/with}}

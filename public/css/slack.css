@@ -62,7 +62,7 @@
   }
   .icon_arrow {
     height: 14px;
-    width: 24px;
+    width: var(--size-3);
     background-image: url('/svg/feature/arrow-right.svg');
   }
 
@@ -108,6 +108,9 @@ body {
   --spacing-6: 28px;
   --spacing-7: 32px;
   --spacing-8: 36px;
+  --spacing-9: 40px;
+  --spacing-10: 44px;
+  --spacing-11: 48px;
 
   --size-1: 14px;
   --size-2: 18px;
@@ -245,10 +248,14 @@ body {
   }
 
   .benefit_info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3);
+    margin-left: auto;
     padding: 60px 0px 0px;
     width: 100%;
     max-width: 600px;
-    padding-bottom: 80px;
+    padding-bottom: 78px;
   }
   .benefit_title {
     font-size: var(--size-5);
@@ -299,7 +306,7 @@ body {
     width: 100%;
     max-width: 1020px;
     padding-top: 72px;
-    padding-bottom: 48px;
+    padding-bottom: var(--spacing-11);
     gap: 38px;
   }
 
@@ -311,7 +318,7 @@ body {
     max-width: 430px;
     height: 360px;
     padding: 0px;
-    gap: 24px;
+    gap: var(--spacing-5);
   }
 
   .deliver_sign {
@@ -332,7 +339,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: var(--spacing-9);
     padding-top: 106px;
     padding-bottom: 80px;
   }
@@ -355,18 +362,26 @@ body {
   }
   .promo_details {
     padding-top: 7px;
-    padding-left: 12px;
+    padding-left: var(--spacing-2);
     gap: 8px;
   }
   .promo_name {
     font-size: var(--size-1);
   }
   .promo_text {
-    font-size: 24px;
+    font-size: var(--size-3);
   }
 
-  .promo_link {
-    position: absolute;
+  .learn_more {
+    display: flex;
+    text-transform: uppercase;
+    color: #1264a3;
+    justify-content: space-between;
+    text-decoration: none;
+  }
+
+  .learn_more > img {
+    color: #1264a3;
   }
 }
 
@@ -410,6 +425,23 @@ body {
 
     .features_grid_4 > .feat_card:first-of-type {
       grid-row: 1/3;
+    }
+
+    .benefit_grid_3 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .customer_image {
+      display: none;
+    }
+    .customer_info {
+      width: fit-content;
+    }
+
+    .promo_title {
+      width: fit-content;
+    }
+    .promo {
+      display: grid;
     }
   }
   @media all and (width < 600px) {
